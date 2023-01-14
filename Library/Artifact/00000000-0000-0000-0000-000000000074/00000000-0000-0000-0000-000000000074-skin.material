@@ -1,0 +1,29 @@
+%YAML 1.1
+--- !Material &1
+name: Liquify
+guid: {a: 10324697987417778620, b: 11043959032118550194}
+xshader: {localId: 1, path: 00000000-0000-0000-0000-000000000074--00000000-0000-0000-0000-000000000074.xshader}
+properties:
+  __class: PropertySheet
+  name: ""
+  guid: {a: 16234684984904223519, b: 6676113788660679570}
+  floatmap:
+    __class: Map
+  vec4map:
+    __class: Map
+  vec3map:
+    __class: Map
+  vec2map:
+    __class: Map
+  mat4map:
+    __class: Map
+  texmap:
+    __class: Map
+  intmap:
+    __class: Map
+renderQueue: -1
+enabledMacros:
+  __class: Map
+  AE_AMAZING_USE_BONES: !<str> 1
+mshaderPath: ""
+instanceCount: 0

@@ -1,0 +1,377 @@
+%YAML 1.1
+--- !Scene &1
+name: ""
+guid: {a: 7875085725817850609, b: 329766013828765107}
+editSceneGuid: {a: 0, b: 0}
+calibrateVer: V5
+entities:
+  - __class: Entity
+    name: Camera
+    guid: {a: 17892678610801857370, b: 559697082159424149}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 2}
+      - __class: Camera
+        name: ""
+        guid: {a: 12556560734000964803, b: 7508859945702231687}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 10
+        type:
+          __class: CameraType
+          value: PERSPECTIVE
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 1
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+    layer: 0
+  - __class: Entity
+    name: Directional Light
+    guid: {a: 3261253174792506660, b: 16680708562180406145}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 3}
+      - __class: DirectionalLight
+        name: ""
+        guid: {a: 13350271480239526722, b: 3096813384112271290}
+        enabled: true
+        color: {x: 1, y: 1, z: 1}
+        intensiy: 1
+        shadowEnable: false
+        shadowEnableNew: false
+        shadowResolution: {x: 256, y: 256}
+        shadowBias: 0
+        shadowStrength: 1
+        useSoftShadow: false
+        shadowSoftness: 1
+        blurRadius: 1.299999952316284
+        blurNum: 0
+        selfShadowGradient: 0
+        shadowColor: {x: 0, y: 0, z: 0}
+        InitStrength: 0.300000011920929
+        EsmC: 0.03500000014901161
+        lightingLayers: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderMode:
+          __class: LightRenderMode
+          value: AUTO
+        shadowArea: 100
+        autoShadowFrustum: true
+        shadowFrustumZNear: 1
+        shadowFrustumZFar: 100
+        cookieSize: 1
+        softShadowType:
+          __class: SoftShadowType
+          value: PCF
+        EVSMExponents: {x: 4, y: 4}
+        contactShadowEnable: false
+        lightUnit:
+          __class: LightUnit
+          value: Lux
+    layer: 0
+  - __class: Entity
+    name: Potato
+    guid: {a: 12268499040523016312, b: 9616407401003818157}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 4}
+      - __class: MeshRenderer
+        name: ""
+        guid: {a: 15226141400228570138, b: 7586517068655040169}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: 1b607e99-5d85-5fad-7277-f4076fdb4a60--1b607e99-5d85-5fad-7277-f4076fdb4a60.material}
+        sortingOrder: 3
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: 00000000-0000-0000-0000-000000000002}
+        castShadow: false
+    layer: 0
+  - __class: Entity
+    name: Face Binding
+    guid: {a: 10395486326700393273, b: 5374553398389466285}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 5}
+      - __class: FaceCapture
+        name: ""
+        guid: {a: 13280727507617372751, b: 16042422491315872945}
+        enabled: true
+        faceid: 0
+        captureType:
+          __class: CaptureType
+          value: HUMAN
+        captureVersion:
+          __class: CaptureVersion
+          value: SOLVEPNP
+        alignoffset: {x: 0, y: 0}
+        alignz: 5
+        isGlobal: true
+        useSceneCameraFov: false
+        isPictureMode: false
+        isFaceCaptureEnable: true
+        calirateVersion:
+          __class: CalibrationType
+          value: V5
+        nearPlane: 0.1000000014901161
+        farPlane: 10000
+        useSceneCameraNearFar: false
+        behaviorWhenTrackerDisappear:
+          __class: BehaviorWhenTrackerDisappear
+          value: ALIGN_VISIBILITY_WITH_TRACKER
+        entityRotateType:
+          __class: EntityRotateType
+          value: ROTATE_AROUND_XYZ_AXIS
+    layer: 0
+  - __class: Entity
+    name: Mouth
+    guid: {a: 741738069822971426, b: 6391412025116595845}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 6}
+      - __class: MeshRenderer
+        name: ""
+        guid: {a: 10467388833893839656, b: 6230074838224863116}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000014--00000000-0000-0000-0000-000000000014.material}
+        sortingOrder: 0
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: 00000000-0000-0000-0000-000000000073}
+        castShadow: false
+      - __class: JSScriptComponent
+        name: ""
+        guid: {a: 11043363890306492187, b: 12631451751560243605}
+        enabled: true
+        path: js/FaceInset.js
+        properties:
+          __class: Map
+          _blendMode: Disable
+          _faceArea: Mouth
+          _faceIndex: 0
+          _faceType: Human face
+          _featheringQuality: 3
+          _featheringScale: 1
+          _fillColor: {r: 1, g: 1, b: 1, a: 0}
+          _inputTexture: Camera input texture
+          _opacity: 1
+          _outlineColor: {r: 1, g: 1, b: 1, a: 1}
+          _outlineThickness: 0.5
+          _qualityLevel: MQ
+          _rtSize: 512 * 512
+          _useDepthTest: true
+          _useFeathering: true
+          _useFillColor: false
+          _useOutline: false
+    layer: 0
+  - __class: Entity
+    name: Right Eye
+    guid: {a: 7585002474255021195, b: 5656664393496962703}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 7}
+      - __class: MeshRenderer
+        name: ""
+        guid: {a: 8739255186292042991, b: 11366594403816868766}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000017--00000000-0000-0000-0000-000000000017.material}
+        sortingOrder: 1
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: 00000000-0000-0000-0000-000000000073}
+        castShadow: false
+      - __class: JSScriptComponent
+        name: ""
+        guid: {a: 5783196698039071626, b: 16905936122235855259}
+        enabled: true
+        path: js/FaceInset.js
+        properties:
+          __class: Map
+          _blendMode: Disable
+          _faceArea: Right eye
+          _faceIndex: 0
+          _faceType: Human face
+          _featheringQuality: 3
+          _featheringScale: 1
+          _fillColor: {r: 1, g: 1, b: 1, a: 0}
+          _inputTexture: Camera input texture
+          _opacity: 1
+          _outlineColor: {r: 1, g: 1, b: 1, a: 1}
+          _outlineThickness: 0.5
+          _qualityLevel: MQ
+          _rtSize: 512 * 512
+          _useDepthTest: true
+          _useFeathering: true
+          _useFillColor: true
+          _useOutline: false
+    layer: 0
+  - __class: Entity
+    name: Left Eye
+    guid: {a: 6719906292075438508, b: 10281071747207366585}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 8}
+      - __class: MeshRenderer
+        name: ""
+        guid: {a: 14720823384857793151, b: 11412127408316347824}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000016--00000000-0000-0000-0000-000000000016.material}
+        sortingOrder: 2
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: 00000000-0000-0000-0000-000000000073}
+        castShadow: false
+      - __class: JSScriptComponent
+        name: ""
+        guid: {a: 3333772950021493157, b: 5353490228327405960}
+        enabled: true
+        path: js/FaceInset.js
+        properties:
+          __class: Map
+          _blendMode: Disable
+          _faceArea: Left eye
+          _faceIndex: 0
+          _faceType: Human face
+          _featheringQuality: 3
+          _featheringScale: 1
+          _fillColor: {r: 1, g: 1, b: 1, a: 0}
+          _inputTexture: Camera input texture
+          _opacity: 1
+          _outlineColor: {r: 1, g: 1, b: 1, a: 1}
+          _outlineThickness: 0.5
+          _qualityLevel: MQ
+          _rtSize: 512 * 512
+          _useDepthTest: true
+          _useFeathering: true
+          _useFillColor: true
+          _useOutline: false
+    layer: 0
+visible: true
+config:
+  __class: Map
+msaa:
+  __class: MSAAMode
+  value: NONE
+jsScriptSystems:
+  - js/GraphSystem.js
+  - js/EditorInjectSystem.js
+  - js/Main.js
+enableMultiTouch: false
+enableLightMultiPass: false
+pixelLightCount: 4
+--- !Transform &2
+name: ""
+guid: {a: 1029434961439008335, b: 6372224128272086966}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &3
+name: ""
+guid: {a: 10827949423485651365, b: 543587625606924957}
+enabled: true
+localPosition: {x: -30, y: 20, z: -20}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.6123723, x: -0.3535534, y: -0.6123725, z: -0.3535534}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &4
+name: ""
+guid: {a: 13352377876933461929, b: 17843357846735336589}
+enabled: true
+localPosition: {x: 0, y: -11.75383, z: 2.114912}
+localScale: {x: 6.817075, y: 9.190442, z: 0.9320914}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 5}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &5
+name: ""
+guid: {a: 3336042994044404786, b: 1562848099372498344}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 6}
+  - {localId: 7}
+  - {localId: 8}
+  - {localId: 4}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &6
+name: ""
+guid: {a: 10106978476517347014, b: 3709727910017176496}
+enabled: true
+localPosition: {x: 1.839191, y: 10.92839, z: 2.2}
+localScale: {x: 0.5, y: 0.434, z: 0.4341189}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 5}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &7
+name: ""
+guid: {a: 14072098569182218433, b: 6862065972203546759}
+enabled: true
+localPosition: {x: -0.8021069, y: 14.29068, z: 2.2}
+localScale: {x: 0.2946343, y: 0.4152242, z: 0.5}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 5}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &8
+name: ""
+guid: {a: 6144542158841219189, b: 2576667534717160111}
+enabled: true
+localPosition: {x: 2.984237, y: 14.45863, z: 2.2}
+localScale: {x: 0.2946343, y: 0.4152242, z: 0.5}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 5}
+mobility:
+  __class: Mobility
+  value: Dynamic
